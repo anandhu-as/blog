@@ -1,0 +1,56 @@
+.blog-container {
+    margin: 20px;
+    padding: 10px;
+    font-family: "Arial", sans-serif;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grief-title {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #f4f4f4;
+}
+
+.stage-explanation {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+    font-family: "Arial", sans-serif;
+}
+
+.full-explanation {
+    font-family: "Arial", sans-serif;
+    font-size: 1.1em;
+    line-height: 1.6;
+    white-space: pre-wrap;
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    word-wrap: break-word;
+    overflow-x: auto;
+    text-align: left;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1em;
+    color: #3d92ac;
+    margin-bottom: 20px;
+}
+
+.back-icon {
+    margin-right: 8px;
+}
+
+.back-link:hover {
+    color: #507885;
+    text-decoration: underline;
+}

@@ -1,0 +1,127 @@
+.home {
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    padding-top: 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: fadeIn 1.2s ease-in-out;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.home-title {
+    font-size: 90px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-shadow: 0 0 8px #00fff2, 0 0 15px #00fff2;
+    margin-bottom: 15px;
+    animation: popIn 1s ease-out;
+}
+
+.home-subtitle {
+    font-size: 1.3rem;
+    color: #bbbbbb;
+    margin-bottom: 40px;
+    animation: fadeIn 1.5s ease-in;
+    max-width: 600px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 30px;
+    font-size: 2rem;
+    animation: fadeIn 2s ease-in;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.social-icons a {
+    color: #00fff2;
+    border: 2px solid transparent;
+    padding: 10px;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 0px transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icons a:hover {
+    color: #ffffff;
+    transform: translateY(-3px) scale(1.1);
+    border-color: #00fff2;
+    box-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes popIn {
+    0% { transform: scale(0.9); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes slideInUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.explore-btn {
+    margin-top: 25px;
+    padding: 12px 28px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #00fff2;
+    background-color: transparent;
+    border: 2px solid #00fff2;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px #00fff2, 0 0 20px transparent;
+    animation: slideInUp 1.2s ease-out;
+}
+
+.explore-btn:hover {
+    color: #121212;
+    background-color: #00fff2;
+    box-shadow: 0 0 10px #00fff2, 0 0 30px #00fff2;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .home-title {
+        font-size: 50px;
+    }
+
+    .home-subtitle {
+        font-size: 1rem;
+    }
+
+    .social-icons {
+        font-size: 1.5rem;
+        gap: 20px;
+    }
+
+    .explore-btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-title {
+        font-size: 36px;
+    }
+
+    .home-subtitle {
+        font-size: 0.95rem;
+    }
+}
